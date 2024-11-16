@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoavaliação de Humor - MindCare</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/self_eval.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MindCare</h1>
+            <p>Seu apoio para uma mente saudável</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Página Inicial</a></li>
+                <li><a href="./about.html">Sobre</a></li>
+                <li><a href="./self_eval.html">Testes</a></li>
+                <li><a href="./recommends.html">Recomendações</a></li>
+                <li><a href="./help.html">Busque Ajuda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="autoavaliacao">
+        <div class="section-title">
+            <h1>Autoavaliação de Humor</h1>
+            <p>Responda às perguntas abaixo para entender melhor o seu humor de hoje.</p>
+        </div>
+        <form id="avaliacaoForm">
+            <div class="question">
+                <label for="pergunta1">Como você se sente fisicamente hoje?</label>
+                <select id="pergunta1" name="pergunta1">
+                    <option value="1">Muito mal</option>
+                    <option value="2">Mal</option>
+                    <option value="3">Neutro</option>
+                    <option value="4">Bem</option>
+                    <option value="5">Muito bem</option>
+                </select>
+            </div>
+            
+            <div class="question">
+                <label for="pergunta2">Como você se sente emocionalmente?</label>
+                <select id="pergunta2" name="pergunta2">
+                    <option value="1">Muito mal</option>
+                    <option value="2">Mal</option>
+                    <option value="3">Neutro</option>
+                    <option value="4">Bem</option>
+                    <option value="5">Muito bem</option>
+                </select>
+            </div>
+            
+            <div class="question">
+                <label for="pergunta3">Você tem se sentido motivado ultimamente?</label>
+                <select id="pergunta3" name="pergunta3">
+                    <option value="1">Nunca</option>
+                    <option value="2">Raramente</option>
+                    <option value="3">Às vezes</option>
+                    <option value="4">Frequentemente</option>
+                    <option value="5">Sempre</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="pergunta4">Você tem se sentido estressado ou sobrecarregado?</label>
+                <select id="pergunta4" name="pergunta4">
+                    <option value="1">Muito estressado</option>
+                    <option value="2">Estressado</option>
+                    <option value="3">Neutro</option>
+                    <option value="4">Pouco estressado</option>
+                    <option value="5">Nada estressado</option>
+                </select>
+            </div>
+
+            <button type="button" id="submitButton" onclick="calcularResultado()">Enviar</button>
+        </form>
+
+        <div id="resultado" class="hidden">
+            <h2>Resultado da sua Autoavaliação</h2>
+            <p id="resultadoTexto"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MindCare | Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../scripts/self_eval.js"></script>
+</body>
+</html>

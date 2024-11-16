@@ -1,0 +1,108 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+section#blog {
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.article {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.article a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+.article p.date {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.article p.excerpt {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.article .read-more {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.article .read-more:hover {
+    color: #45a049;
+}
+
+section#newsletter {
+    padding: 20px;
+    background-color: #e1f7d5;
+    border-radius: 8px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+section#newsletter input {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+section#newsletter button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+section#newsletter button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 20px;
+}
